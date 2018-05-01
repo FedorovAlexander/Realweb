@@ -1,0 +1,7 @@
+nav.menu
+    each item in getData('menu')
+        if (item.name == currentPageTitle)
+            div.menu__item.menu__item_active!=item.name
+        else
+            a(href=`${item.link}`).menu__item!=item.name
+    

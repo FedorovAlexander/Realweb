@@ -1,0 +1,56 @@
+[type="text"],
+textarea,
+[type="password"],
+[type="date"],
+[type="datetine"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="time"],
+[type="tel"],
+[type="month"],
+[type="week"],
+select,
+	display block
+	width 100%
+	border-radius 3px
+	box-sizing border-box
+	background #fff
+	font-size 14px
+	padding 10px
+	color $FONT_COLOR
+	fontBase()
+	font-weight normal
+	border 1px solid #000
+	&.error
+		border-color $ERROR
+.form
+	position relative
+
+	&__item
+		margin-bottom 20px
+		&.error
+			[type="text"],
+			textarea,
+			[type="password"],
+			[type="date"],
+			[type="datetine"],
+			[type="email"],
+			[type="number"],
+			[type="search"],
+			[type="time"],
+			[type="tel"],
+			[type="month"],
+			[type="week"],
+			select
+				border-color $ERROR
+	&__title
+		text-align left
+		display block
+		margin-bottom 5px
+.error-msg
+	margin-top 10px
+	display inline-block
+	color $ERROR
+	text-align left
+

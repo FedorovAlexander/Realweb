@@ -1,0 +1,30 @@
+@import 'helpers/01_variables.styl'
+a
+	color $LINK_COLOR
+	text-decoration none
+	&:hover
+		color $LINK_COLOR_HOVER
+
+img
+	max-width 100%
+
+body
+	position relative
+	font-size $BASE_SIZE
+	line-height $LINE_HEIGHT
+	color $FONT_COLOR
+	fontBase()
+	font-weight normal
+	background $BODY_BG
+
+*:focus
+	outline none
+main
+	position relative
+
+.wrapper
+	padding 0 10px
+	min-width 300px
+	margin 0 auto
+	max-width 1000px
+
