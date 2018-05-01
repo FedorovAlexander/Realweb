@@ -5,13 +5,13 @@
 .personal-data__form--contacts
   margin-bottom 23px
 .personal-data__title
-  font-size 18px
+  font-size $BASE_SIZE+4
   font-weight normal
 .personal-data__input
   display block
   width 60%
-  font-size 14px
-  font-family font-family
+  font-size $BASE_SIZE
+  font-family $FONT-FAMILY
   padding-top 5px
   padding-bottom 5px
   padding-left 10px
@@ -29,7 +29,7 @@ input:disabled
   border 1px solid #d5d5d5
   border-bottom none
 .personal-data__change
-  font-size font-size - 2
+  font-size $BASE_SIZE - 2
   color #aaaaaa
   position absolute
   right 10px
@@ -46,10 +46,6 @@ input:disabled
 .personal-data__item--birth-date
 .personal-data__item--password
   border-bottom 1px solid #d5d5d5
-.subscribe-label
-  display block
-  font-size font-size
-  line-height 14px
 .address__form
   border 1px solid #d5d5d5
   padding-top 15px
@@ -68,16 +64,16 @@ input[type="checkbox"]
   border-radius 0
 .address__title
   margin-top 0px
-  font-size font-size
-  font-family font-family
+  font-size $BASE_SIZE
+  font-family $FONT-FAMILY
   font-weight normal
 .address__block
   position relative
   padding 0
   margin 0
 .address__label
-  font-family font-family
-  font-size font-size - 2
+  font-family $FONT-FAMILY
+  font-size $BASE_SIZE - 2
   line-height 30px
   position relative
   padding-left 10px
@@ -90,7 +86,7 @@ input[type="checkbox"]
 #address1
   border-bottom-color transparent
 .address__remove
-  font-size font-size - 2
+  font-size $BASE_SIZE - 2
   color #e85a22
   position absolute
   right 0px
@@ -105,8 +101,8 @@ input[type="checkbox"]
   cursor pointer
 .address__add-btn
   margin-top 20px
-  font-family font-family
-  font-size font-size - 2
+  font-family $FONT-FAMILY
+  font-size $BASE_SIZE - 2
   color #fff
   padding-top 7px
   padding-bottom 8px
