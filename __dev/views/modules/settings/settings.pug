@@ -1,0 +1,87 @@
+section.settings
+  div.container
+    article(class="personal-data personal-data--name")
+      h2.personal-data__title Личные данные
+      form(action="#" class="personal-data__form personal-data__form--name" method="post")
+        div(class="personal-data__item" id="data-name")
+          input(type="text" class="personal-data__input" placeholder="Имя" value="" id="name" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-name") изменить
+          span(class="personal-data__change personal-data__change--save" id="change-name") сохранить
+        div(class="personal-data__item" id="data-surname")
+          input(type="text" class="personal-data__input" placeholder="Фамилия" value="" id="surname" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-name") изменить
+          span(class="personal-data__change personal-data__change--save" id="change-name") сохранить
+        div(class="personal-data__item" id="data-patronimic" )
+          input(type="text" class="personal-data__input" placeholder="Отчество" value="" id="patronimic" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-patronimic") изменить
+          span(class="personal-data__change personal-data__change--save" id="save-patronimic") сохранить
+        div(class="personal-data__item" id="birth-date" )
+          input(type="text" class="personal-data__input" placeholder="Дата рождения" value="" id="birth-date" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-birth-date") изменить
+          span(class="personal-data__change personal-data__change--save" id="save-birth-date") сохранить
+    article(class="personal-data personal-data--contact")
+      h2.personal-data__title Контактные данные
+      form(action="#" class="personal-data__form personal-data__form--contacts")
+        div(class="personal-data__item" id="data-phone")
+          input(type="text" class="personal-data__input" placeholder="+7 (___)-__-__" value="" id="phone" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-phone") изменить
+          span(class="personal-data__change personal-data__change--save" id="save-phone") сохранить
+        div(class="personal-data__item" id="data-email")
+          input(type="text" class="personal-data__input" placeholder="dmitriy_loginov@gmail.com" id="email" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-email")  изменить
+          span(class="personal-data__change personal-data__change--save" id="save-email")  сохранить
+        div(class="personal-data__item personal-data__item--password" id="data-password")
+          input(type="password" class="personal-data__input personal-data__input--password" placeholder="Пароль[*******]" value="" id="password" disabled)
+          span(class="personal-data__change personal-data__change--change" id="change-password")  изменить
+          span(class="personal-data__change personal-data__change--save" id="save-password")  сохранить
+    article(class="personal-data personal-data--address")
+      h2.personal-data__title Адресная книга
+      form(action="#" class="personal-data__form address__form" id="address__form")
+        span(class="personal-data__change personal-data__change--change" id="change-address")  изменить
+        h3.address__title Текущий адрес доставки
+        div(class="address__block" id="first-address")
+          input(type="radio" name="address" class="address__input" placeholder="" checked id="address-first" value="address")
+          label(class="address__label" for="address-first" id="address1") 432 071 Россия, г.Троицк, ул.Ленина д.34. кв.54
+          span(class="address__remove" id="remove-address1")  удалить
+        div(class="address__block" id="second-address")
+          input(type="radio" name="address" class="address__input" placeholder="" id="address-second" value="")
+          label(class="address__label" for="address-second" id="address2") 445 086 Россия, г. Керчь, ул. Первого Интернационала д.14. кв.6 
+          span(class="address__remove" id="remove-address2")  удалить
+        br
+        button(type="submit" class="address__add-btn" id="add-address-btn") Добавить еще один адрес
+      div(class="address__add" id="add-address-block")
+        h4(class="address__title-add") добавить адрес
+        input(class="address__add-input address__add-input--index"  placeholder="Индекс")
+        select(class="address__add-country")
+          option(class="address__country-option" disabled selected) Страна
+          option(class="address__country-option" value="Россия") Россия
+          option(class="address__country-option" value="Ozzz") Оз
+        select(class="address__add-city")
+          option(class="address__city-option" disabled selected) Город
+          option(class="address__city-option" value="Spb") Санкт-Петербург
+          option(class="address__city-option" value="Izumrud") Изумрудный
+        input(class="address__add-input address__add-input--address" placeholder="Адрес")
+        button(type="submit" class="address__add-btn address__add-btn--orange") Добавить адрес
+    article.socials
+      h2.socials__title Социальные сети
+      p.socials__description Привяжите учетную запись социиальной сети и используйте ее для входа
+      a(href="#" class="socials__link socials__link--fb")
+        |Facebook
+      a(href="#" class="socials__link socials__link--vk")
+        |Вконтакте
+      a(href="#" class="socials__link socials__link--tw")
+        |Twitter
+      a(href="#" class="socials__link socials__link--ok")
+        |Одноклассники
+    article(class="personal-data personal-data--subscribe")
+      h2.personal-data__title Подписки и уведомления
+      form(action="" class="personal-data_form personal-data__form--subscribe")
+        label(class="subscribe-label" for="subscribe-email")
+          input(type="checkbox" name="subscribe" class="personal-data__input--subscribe" id="subscribe-email")
+          |Оповещать меня о текущх акциях по e-mail
+        label(class="subscribe-label" for="subscribe-sms")
+          input(type="checkbox" name="subscribe" class="personal-data__input--subscribe" id="subscribe-sms")
+          |Оповещать меня о текущих акциях по sms
+            
+            
+            
