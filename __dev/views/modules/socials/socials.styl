@@ -1,7 +1,8 @@
 .socials
+  position relative
   box-sizing border-box
   background-color #fff6e0
-  padding-left 20px
+  padding-left 19px
   padding-right 20px
   padding-bottom 20px
   padding-top 14px
@@ -10,15 +11,22 @@
   margin-right auto
   width 100%
   max-width 600px
+
+  +above(1050px)
+    position absolute
+    right 18px
+    top 45px
+    max-width 291px
 .socials__title
   font-family $FONT-FAMILY__MAIN-TITLE
   font-size $BASE_SIZE
   text-transform uppercase
+  margin-bottom 14px
 .socials__description
   font-family $FONT-FAMILY
   font-size $BASE_SIZE - 2
   line-height 16px
-  margin-bottom 23px
+  margin-bottom 22px
 .socials__link
   display block
   font-family $FONT-FAMILY
@@ -29,34 +37,61 @@
   padding-bottom 12px
   padding-left 55px
   margin-bottom 15px
+
+  +below(1049px)
+    max-width 300px
+    margin-left auto
+    margin-right auto
+    text-align center
+    padding-left 0
 .socials__link--fb
   background-color #1d59a3
   position relative
-.socials__link--fb:after
-  content ""
-  position absolute
-  display block
+  padding-bottom 10px
+  &:before
+    content ''
+    display block
+    position absolute
+    vertical-align middle
+    sprite($s-fb)
+    bottom 10px
+    left 21px
 
 .socials__link--vk
   background-color #1c608d
   position relative
-.socials__link--vk:after
-  content ""
-  position absolute
-  display block
+  padding-bottom 10px
+  &:before
+    content ''
+    display block
+    position absolute
+    vertical-align middle
+    sprite($s-vk)
+    bottom 12px
+    left 13px
 
 .socials__link--tw
   background-color #00b2e6
   position relative
-.socials__link--tw:after
-  content ""
-  position absolute
-  display block
+  padding-bottom 10px
+  &:before
+    content ''
+    display block
+    position absolute
+    vertical-align middle
+    sprite($s-tw)
+    bottom 11px
+    left 15px
 
 .socials__link--ok
   background-color #ef7800
   position relative
-.socials__link--ok:after
-  content ""
-  position absolute
-  display block
+  padding-bottom 10px
+  &:before
+    content ''
+    display block
+    position absolute
+    vertical-align middle
+    sprite($s-ok)
+    bottom 10px
+    left 20px
