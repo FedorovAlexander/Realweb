@@ -1,0 +1,28 @@
+article(class="personal-data personal-data--address address")
+  h2.personal-data__title Адресная книга
+  form(action="#" class="personal-data__form address__form" id="address__form")
+    span(class="personal-data__change personal-data__change--change" id="change-address")  изменить
+    h3.address__title Текущий адрес доставки
+    div(class="address__block" id="first-address")
+      input(type="radio" name="address" class="address__input" placeholder="" checked id="address-first" value="address")
+      label(class="address__label" for="address-first" id="address1") 432 071 Россия, г.Троицк, ул.Ленина д.34. кв.54
+      span(class="address__remove" id="remove-address1")  удалить
+    div(class="address__block" id="second-address")
+      input(type="radio" name="address" class="address__input" placeholder="" id="address-second" value="")
+      label(class="address__label" for="address-second" id="address2") 445 086 Россия, г. Керчь, ул. Первого Интернационала д.14. кв.6 
+      span(class="address__remove" id="remove-address2")  удалить
+    br
+    button(type="submit" class="address__add-btn" id="add-address-btn") Добавить еще один адрес
+  div(class="address__add" id="add-address-block")
+    h4(class="address__title-add") добавить адрес
+    input(class="address__add-input address__add-input--index"  placeholder="Индекс")
+    select(class="address__add-country")
+      option(class="address__country-option" disabled selected) Страна
+      option(class="address__country-option" value="Россия") Россия
+      option(class="address__country-option" value="Ozzz") Оз
+    select(class="address__add-city")
+      option(class="address__city-option" disabled selected) Город
+      option(class="address__city-option" value="Spb") Санкт-Петербург
+      option(class="address__city-option" value="Izumrud") Изумрудный
+    input(class="address__add-input address__add-input--address" placeholder="Адрес")
+    button(type="submit" class="address__add-btn address__add-btn--orange") Добавить адрес
