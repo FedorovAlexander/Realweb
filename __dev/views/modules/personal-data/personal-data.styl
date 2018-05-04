@@ -1,5 +1,11 @@
+.personal-data
+  width 100%
 .personal-data__form
   max-width 606px
+
+  +below(1050px)
+    margin-left auto
+    margin-right auto
 .personal-data__form--name
   margin-bottom 47px
 .personal-data__form--contacts
@@ -9,6 +15,9 @@
 .personal-data__title
   font-size $BASE_SIZE+4
   font-weight normal
+
+  +below(1050px)
+    text-align center
 .personal-data__input
   display block
   font-size $BASE_SIZE
@@ -19,6 +28,9 @@
   padding-right 20px
   border 1px solid #d5d5d5
   position relative
+  max-width 300px
+  +below(640px)
+    width 65%
 input:disabled
   background-color #ffffff
   border 1px solid transparent
