@@ -17,6 +17,9 @@
   position relative
   padding 0
   margin 0
+  +below(674px)
+    display flex
+    align-items: baseline;
 .address__label
   font-family $FONT-FAMILY
   font-size $BASE_SIZE - 2
@@ -39,11 +42,15 @@
   text-decoration underline
   display none
   cursor pointer
+    +below(674px)
+      display none
 .address__remove:visited
   color #aaaaaa
 .address__remove-btn
   display none
   cursor pointer
+  +below(674px)
+    margin-left 15px
 .address__add-btn
   margin-top 20px
   font-family $FONT-FAMILY
@@ -69,29 +76,48 @@ input[type="radio"]
   padding-right 20px
   padding-bottom 30px
   padding-left 20px
-  box-sizing border-box
-  max-width 600px
+  margin-left auto
+  margin-right auto
+  max-width 565px
+  +above(1049px)
+    margin-left 0
+  +below(674px)
+    display flex
+    flex-direction column
+
 .address__title-add
   text-transform uppercase
 .address__add-input
   border-left none
   border 1px solid #d5d5d5
   padding 8px 10px
-  width 100%
   margin-bottom 10px
+.address__add-input--address
+  +above(674px)
+    width 100px
+    min-width 540px
 .address__add-city
 .address__add-country
   border 1px solid #d5d5d5
   padding 8px 10px
   width 100%
   margin-bottom 10px
+
+  +above(675px)
+    display inline-block
+    max-width 175px
+
+.address__add-country
+.address__add-city
+  +above(675px)
+    margin-left 11px
 .address__add-btn--orange
   background-color #e85a22
   border-bottom #cb4815
-  display inline-block
-  float right
   margin-top 15px
   padding-left 50px
   padding-right 50px
+  +below(674px)
+    width 100%
 #add-address-block
-  display none
+  // display none
