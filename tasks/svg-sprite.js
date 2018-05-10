@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import config from '../config';
 import svgSprite from 'gulp-svg-sprites';
-import svgstore from 'gulp-svgstore';
 import cheerio from 'gulp-cheerio'
 import plumber from 'gulp-plumber';
 import fs from 'fs';
@@ -14,14 +13,13 @@ gulp.task('svg-sprite', () => {
             svg: {
                 symbols: "../images/sprite-icons.html"
             },
-            svgPath: '../images/sprite-icons.svg',
+            svgPath: '../images/sprite-icons.html',
             preview: false,
             templates: {
                 css: fs.readFileSync(process.cwd() + '/__dev/styles/helpers/svg-sprite-template.css', "utf-8")
             },
             svgId: "icon-%f"
-        })) 
-        .pipe(svgstore({ inlineSvg: true }))
+        }))
         .pipe(cheerio({
         	run: function ($) {
         		$('[fill]').removeAttr('fill');
