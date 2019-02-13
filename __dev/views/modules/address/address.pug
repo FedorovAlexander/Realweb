@@ -1,29 +1,29 @@
 article(class="personal-data personal-data--address address")
-  h2.personal-data__title Адресная книга
-  form(action="#" class="personal-data__form address__form")
-    span(class="personal-data__change personal-data__change--change" id="change-address")  изменить
-    h3.address__title Текущий адрес доставки
+	h2.personal-data__title Адресная книга
+	form(action="#" class="personal-data__form address__form")
+		span(class="personal-data__change personal-data__change--change" id="change-address")  изменить
+		h3.address__title Текущий адрес доставки
 
-    each item in getData('address')
-      div(class="address__block" id="address-block-"+item.index)
-        input(type="radio" name="address" class="address__input" placeholder="" checked=(item.index==1?'checked': false) id="address-input-"+item.index value="address")
-        label(class="address__label" for="address-input"+item.index id="address-label-"+item.index)= item.address
-        span(class="address__remove" id="remove-address"+item.index)  удалить
-    
-    br
-    button(type="submit" class="address__add-btn") Добавить еще один адрес
-  div(class="address__add" id="add-address-block")
-    h4(class="address__title-add") добавить адрес
-    .address__wrapper
-      input(class="address__add-input address__add-input--index"  placeholder="Индекс")
-      
-      select(class="address__add-country")
-        each item in getData('country')
-          option(class="address__country-option" disabled=(item.index=='1'?'disabled': false) selected=(item.index=='1'? 'selected' : false))=item.name
+		each item in getData('address')
+			div(class="address__block" id="address-block-"+item.index)
+				input(type="radio" name="address" class="address__input" placeholder="" checked=(item.index==1?'checked': false) id="address-input-"+item.index value="address")
+				label(class="address__label" for="address-input"+item.index id="address-label-"+item.index)= item.address
+				span(class="address__remove" id="remove-address"+item.index)  удалить
+		
+		br
+		button(type="submit" class="address__add-btn") Добавить еще один адрес
+	div(class="address__add" id="add-address-block")
+		h4(class="address__title-add") добавить адрес
+		.address__wrapper
+			input(class="address__add-input address__add-input--index"  placeholder="Индекс")
+			
+			select(class="address__add-country")
+				each item in getData('country')
+					option(class="address__country-option" disabled=(item.index=='1'?'disabled': false) selected=(item.index=='1'? 'selected' : false))=item.name
 
-      select(class="address__add-city")
-        each item in getData('city')
-          option(class="address__city-option" disabled=(item.index=='1'?'disabled': false) selected=(item.index=='1'? 'selected' : false))=item.name
+			select(class="address__add-city")
+				each item in getData('city')
+					option(class="address__city-option" disabled=(item.index=='1'?'disabled': false) selected=(item.index=='1'? 'selected' : false))=item.name
 
-    input(class="address__add-input address__add-input--address" placeholder="Адрес")
-    button(type="submit" class="address__add-btn address__add-btn--orange") Добавить адрес
+		input(class="address__add-input address__add-input--address" placeholder="Адрес")
+		button(type="submit" class="address__add-btn address__add-btn--orange") Добавить адрес
