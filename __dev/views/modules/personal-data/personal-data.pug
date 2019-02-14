@@ -1,34 +1,19 @@
 article(class="personal-data personal-data--name")
   h2.personal-data__title Личные данные
   form(action="#" class="personal-data__form personal-data__form--name" method="post")
-    div(class="personal-data__item" id="data-name")
-      input(type="text" class="personal-data__input" placeholder="Имя" value="" id="name" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-name") изменить
-      span(class="personal-data__change personal-data__change--save" id="save-name") сохранить
-    div(class="personal-data__item" id="data-surname")
-      input(type="text" class="personal-data__input" placeholder="Фамилия" value="" id="surname" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-surname") изменить
-      span(class="personal-data__change personal-data__change--save" id="save-surname") сохранить
-    div(class="personal-data__item" id="data-patronimic" )
-      input(type="text" class="personal-data__input" placeholder="Отчество" value="" id="patronimic" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-patronimic") изменить
-      span(class="personal-data__change personal-data__change--save" id="save-patronimic") сохранить
-    div(class="personal-data__item personal-data__item--birth-date" id="data-birth-date" )
-      input(type="text" class="personal-data__input--birth personal-data__input" placeholder="Дата рождения" value="" id="birth-date" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-birth-date") изменить
-      span(class="personal-data__change personal-data__change--save" id="save-birth-date") сохранить
+    
+    each item in getData('personal-data')
+      div(class="personal-data__item" id="data-"+item.id)
+        input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value id=item.id disabled)
+        span(class="personal-data__change personal-data__change--change" id="change-"+item.id) изменить
+        span(class="personal-data__change personal-data__change--save" id="save-"+item.id) сохранить
+
 article(class="personal-data personal-data--contact")
   h2.personal-data__title Контактные данные
   form(action="#" class="personal-data__form personal-data__form--contacts")
-    div(class="personal-data__item" id="data-phone")
-      input(type="text" class="personal-data__input" placeholder="+7 (___)-__-__" value="" id="phone" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-phone") изменить
-      span(class="personal-data__change personal-data__change--save" id="save-phone") сохранить
-    div(class="personal-data__item" id="data-email")
-      input(type="text" class="personal-data__input" placeholder="dmitriy_loginov@gmail.com" id="email" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-email")  изменить
-      span(class="personal-data__change personal-data__change--save" id="save-email")  сохранить
-    div(class="personal-data__item personal-data__item--password" id="data-password")
-      input(type="password" class="personal-data__input personal-data__input--password" placeholder="Пароль[*******]" value="" id="password" disabled)
-      span(class="personal-data__change personal-data__change--change" id="change-password")  изменить
-      span(class="personal-data__change personal-data__change--save" id="save-password")  сохранить
+    each item in getData('personal-contacts')
+      div(class="personal-data__item" id="data-"+item.id)
+        input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value id=item.id disabled)
+        span(class="personal-data__change personal-data__change--change" id="change-"+item.id) изменить
+        span(class="personal-data__change personal-data__change--save" id="save-"+item.id) сохранить
+  

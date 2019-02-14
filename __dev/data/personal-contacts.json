@@ -1,0 +1,20 @@
+[
+  {
+    "index": "1",
+    "value": "",
+    "id": "phone",
+    "placeholder": "+7 (___)-__-__"
+  },
+  {
+    "index": "2",
+    "value": "",
+    "id": "email",
+    "placeholder": "dmitriy_loginov@gmail.com"
+  },
+  {
+    "index": "3",
+    "value": "",
+    "id": "password",
+    "placeholder": "Пароль[*******]"
+  }
+]

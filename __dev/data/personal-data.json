@@ -1,0 +1,26 @@
+[
+  {
+    "index": "1",
+    "value": "",
+    "id": "name",
+    "placeholder": "Имя"
+  },
+  {
+    "index": "2",
+    "value": "",
+    "id": "surname",
+    "placeholder": "Фамилия"
+  },
+  {
+    "index": "3",
+    "value": "",
+    "id": "patronimic",
+    "placeholder": "Отчество"
+  },
+  {
+    "index": "4",
+    "value": "",
+    "id": "birth-date",
+    "placeholder": "Дата рождения"
+  }
+]
