@@ -3,17 +3,17 @@ article(class="personal-data personal-data--name")
   form(action="#" class="personal-data__form personal-data__form--name" method="post")
     
     each item in getData('personal-data')
-      div(class="personal-data__item" id="data-"+item.id)
-        input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value id=item.id disabled)
-        span(class="personal-data__change personal-data__change--change" id="change-"+item.id) изменить
-        span(class="personal-data__change personal-data__change--save" id="save-"+item.id) сохранить
+      div(class="personal-data__item")
+        input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value disabled)
+        span(class="personal-data__change personal-data__change--change") изменить
+        span(class="personal-data__change personal-data__change--save") сохранить
 
 article(class="personal-data personal-data--contact")
   h2.personal-data__title Контактные данные
   form(action="#" class="personal-data__form personal-data__form--contacts")
     each item in getData('personal-contacts')
-      div(class="personal-data__item" id="data-"+item.id)
-        input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value id=item.id disabled)
-        span(class="personal-data__change personal-data__change--change" id="change-"+item.id) изменить
-        span(class="personal-data__change personal-data__change--save" id="save-"+item.id) сохранить
+      div(class="personal-data__item")
+        input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value disabled)
+        span(class="personal-data__change personal-data__change--change") изменить
+        span(class="personal-data__change personal-data__change--save") сохранить
   
