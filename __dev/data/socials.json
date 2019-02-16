@@ -1,0 +1,22 @@
+[
+  {
+    "index": "1",
+    "network": "Facebook",
+    "abbr": "fb"
+  },
+  {
+    "index": "2",
+    "network": "Вконтакте",
+    "abbr": "vk"
+  },
+  {
+    "index": "3",
+    "network": "Twitter",
+    "abbr": "tw"
+  },
+  {
+    "index": "4",
+    "network": "Одноклассники",
+    "abbr": "ok"
+  }
+]

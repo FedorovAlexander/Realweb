@@ -1,13 +1,10 @@
 article.socials
   h2.socials__title Социальные сети
   p.socials__description Привяжите учетную запись социальной сети и используйте ее для входа
-  a(href="#" class="socials__link socials__link--fb")
-    |Facebook
-  a(href="#" class="socials__link socials__link--vk")
-    |Вконтакте
-  a(href="#" class="socials__link socials__link--tw")
-    |Twitter
-  a(href="#" class="socials__link socials__link--ok")
-    |Одноклассники
+  .socials__buttons-block
+    each item in getData('socials')
+      button.socials__button
+        a(href="#" class="socials__link socials__link--"+item.abbr)= item.network
+
   //- svg(width="40" height="40")
   //-   use(xlink:href="#icon-business")
