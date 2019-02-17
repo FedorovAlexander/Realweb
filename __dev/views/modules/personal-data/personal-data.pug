@@ -1,6 +1,6 @@
 article(class="personal-data personal-data--name")
   h2.personal-data__title Личные данные
-  form(action="#" class="personal-data__form personal-data__form--name" method="post")
+  div(class="personal-data__block personal-data__block--name" method="post")
     
     each item in getData('personal-data')
       div(class="personal-data__item")
@@ -10,7 +10,7 @@ article(class="personal-data personal-data--name")
 
 article(class="personal-data personal-data--contact")
   h2.personal-data__title Контактные данные
-  form(action="#" class="personal-data__form personal-data__form--contacts")
+  div(class="personal-data__block personal-data__block--contacts")
     each item in getData('personal-contacts')
       div(class="personal-data__item")
         input(type="text" class="personal-data__input" placeholder=item.placeholder value=item.value disabled)
