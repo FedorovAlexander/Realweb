@@ -1,0 +1,10 @@
+[
+  {
+    "index": "1",
+    "via": "email"
+  },
+  {
+    "index": "2",
+    "via": "sms"
+  }
+]
