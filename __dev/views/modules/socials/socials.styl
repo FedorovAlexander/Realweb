@@ -18,93 +18,100 @@
     max-width 291px
   +below(1049px)
     margin-top 60px
-.socials__title
-  font-family $FONT-FAMILY__MAIN-TITLE
-  font-size $BASE_SIZE
-  text-transform uppercase
-  letter-spacing 0.3px
-  margin-bottom 14px
-.socials__description
-  font-family $FONT-FAMILY
-  font-size $BASE_SIZE - 2
-  line-height 16px
-  margin-bottom 20px
-.socials__buttons-block
-  width 100%
-  display flex
-  flex-direction column
-  justify-content center
-  align-content center
-.socials__button
-  padding 0
-  margin 0
-  border none
-  background-color transparent
-.socials__link
-  display block
-  font-family $FONT-FAMILY
-  font-size $BASE_SIZE
-  text-decoration none
-  color #fff6e0
-  padding-top 12px
-  padding-bottom 1px
-  padding-left 55px
-  margin-bottom 15px
 
-  +below(1049px)
-    max-width 300px
-    margin-left auto
-    margin-right auto
-    text-align center
-    padding-left 0
-.socials__link--fb
-  background-color #1d59a3
-  position relative
-  padding-bottom 10px
-  &:before
-    content ''
-    display block
-    position absolute
-    vertical-align middle
-    sprite($s-fb)
-    bottom 10px
-    left 21px
+  &__title
+    font-family $FONT-FAMILY__MAIN-TITLE
+    font-size $BASE_SIZE
+    text-transform uppercase
+    letter-spacing 0.3px
+    margin-bottom 14px
 
-.socials__link--vk
-  background-color #1c608d
-  position relative
-  padding-bottom 10px
-  &:before
-    content ''
-    display block
-    position absolute
-    vertical-align middle
-    sprite($s-vk)
-    bottom 12px
-    left 13px
+  &__description
+    font-family $FONT-FAMILY
+    font-size $BASE_SIZE - 2
+    line-height 16px
+    margin-bottom 20px
 
-.socials__link--tw
-  background-color #00b2e6
-  position relative
-  padding-bottom 10px
-  &:before
-    content ''
-    display block
-    position absolute
-    vertical-align middle
-    sprite($s-tw)
-    bottom 10px
-    left 15px
+  &__buttons-block
+    width 100%
+    display flex
+    flex-direction column
+    justify-content center
+    align-content center
 
-.socials__link--ok
-  background-color #ef7800
-  position relative
-  padding-bottom 10px
-  &:before
-    content ''
+  &__button
+    padding 0
+    margin 0
+    border none
+    background-color transparent
+
+  &__link
     display block
-    position absolute
-    vertical-align middle
-    sprite($s-ok)
-    bottom 10px
-    left 20px
+    font-family $FONT-FAMILY
+    font-size $BASE_SIZE
+    text-decoration none
+    color #fff6e0
+    text-align left
+    padding-top 12px
+    padding-bottom 1px
+    padding-left 55px
+    margin-bottom 15px
+
+    +below(1049px)
+      max-width 300px
+      margin-left auto
+      margin-right auto
+      text-align center
+      padding-left 0
+      
+  &__link--fb
+    background-color #1d59a3
+    position relative
+    padding-bottom 10px
+    &:before
+      content ''
+      display block
+      position absolute
+      vertical-align middle
+      sprite($s-fb)
+      bottom 10px
+      left 21px
+
+  &__link--vk
+    background-color #1c608d
+    position relative
+    padding-bottom 10px
+    &:before
+      content ''
+      display block
+      position absolute
+      vertical-align middle
+      sprite($s-vk)
+      bottom 12px
+      left 13px
+
+  &__link--tw
+    background-color #00b2e6
+    position relative
+    padding-bottom 10px
+    &:before
+      content ''
+      display block
+      position absolute
+      vertical-align middle
+      sprite($s-tw)
+      bottom 10px
+      left 15px
+
+  &__link--ok
+    background-color #ef7800
+    position relative
+    padding-bottom 10px
+    &:before
+      content ''
+      display block
+      position absolute
+      vertical-align middle
+      sprite($s-ok)
+      bottom 10px
+      left 20px
