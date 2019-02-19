@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>UI</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="template/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="template/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="dist/favicons/favicon.ico">
+    <!-- [ START ] Стили библиотек-->
+    <link rel="stylesheet" type="text/css" href="./template/styles/vendor.css">
+    <!-- [  END  ] Стили библиотек-->
+    <!-- [ START ] Стили проекта-->
+    <link rel="stylesheet" type="text/css" href="./template/template_styles.css">
+    <link rel="stylesheet" type="text/css" href="./template/styles/additional.css">
+    <!-- [  END  ] Стили проекта-->
+    <!-- [ START ] Переменные bitrix-->
+    <script>
+        window.App = window.App || {};
+        App.BX = {
+            TEMPLATE_PATH: './template/'
+        }
+    </script>
+    <!-- [  END  ] Переменные bitrix-->
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <a class="header__logo logo" href="/main.html">
+                    <img src="./template/images/logo.png" alt="" title="" />
+                </a>
+                <div class="header__menu">
+                    <nav class="menu">
+                        <a class="menu__item" href="#">О нас</a>
+                        <a class="menu__item" href="#">Новости</a>
+                        <a class="menu__item" href="#">Акции</a>
+                        <a class="menu__item" href="#">Услуги</a>
+                        <a class="menu__item" href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="header__phone">
+                    <a class="phone" href="tel:+78122440880">+7 (812) 277 08-80</a>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <h1>Элементы формы</h1>
+            <form class="form" action="">
+                <div class="form__item">
+                    <label class="form__title">Поле ввода</label>
+                    <input class="error" type="text" name="" placeholder="Поле ввода">
+                    <div class="error-msg">Поле обязательно для заполнения</div>
+                </div>
+                <div class="form__item">
+                    <label class="form__title">Выпадающий список</label>
+                    <select>
+                        <option>Выберите пункт</option>
+                        <option>Выберите пункт</option>
+                        <option>Выберите пункт</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label class="form__title">Радиобоксы</label>
+                    <div class="form__item">
+                        <input type="radio" id="action-11" name="test" checked="">
+                        <label for="action-11">Летний сезон подарков открыт!</label>
+                    </div>
+                    <div class="form__item">
+                        <input type="radio" id="action-22" name="test">
+                        <label for="action-22">В лето вместе с JBL!</label>
+                    </div>
+                    <div class="form__item">
+                        <input type="radio" id="action-33" name="test">
+                        <label for="action-33">500 р. В нашу пользу!</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label class="form__title">Чекбоксы</label>
+                    <div class="form__item">
+                        <input type="checkbox" id="action-1" checked="">
+                        <label for="action-1">Летний сезон подарков открыт!</label>
+                    </div>
+                    <div class="form__item">
+                        <input type="checkbox" id="action-2">
+                        <label for="action-2">В лето вместе с JBL!</label>
+                    </div>
+                    <div class="form__item">
+                        <input type="checkbox" id="action-3">
+                        <label for="action-3">500 р. В нашу пользу!</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label class="form__title">Чекбоксы</label>
+                    <div class="form-item error">
+                        <input type="checkbox" id="action-111" checked="">
+                        <label for="action-111">Летний сезон подарков открыт!</label>
+                    </div>
+                    <div class="form-item error">
+                        <input type="radio" id="action-222" checked="">
+                        <label for="action-222">В лето вместе с JBL!</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label class="form__title">Текстовый блок</label>
+                    <textarea></textarea>
+                </div>
+                <div class="form__item">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer__menu">
+                    <nav class="menu">
+                        <a class="menu__item" href="#">О нас</a>
+                        <a class="menu__item" href="#">Новости</a>
+                        <a class="menu__item" href="#">Акции</a>
+                        <a class="menu__item" href="#">Услуги</a>
+                        <a class="menu__item" href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__line">
+                    <a class="footer__logo logo" href="/main.html">
+                        <img src="./template/images/logo.png" alt="" title="" />
+                    </a>
+                    <a class="email" href="mailto:spb@realweb.ru">spb@realweb.ru</a>
+                </div>
+            </div>
+        </footer>
+        <!-- [ START ] Скрипты проекта-->
+        <script src="./template/scripts/main.js"></script>
+        <script src="./template/scripts/address.js"></script>
+        <script src="./template/scripts/menu.js"></script>
+        <script src="./template/scripts/personal-data.js"></script>
+        <!-- [END] Скрипты проекта-->
+    </main>
+</body>
+
+</html>
