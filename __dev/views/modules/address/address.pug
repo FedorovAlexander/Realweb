@@ -3,12 +3,12 @@ article(class="personal-data personal-data--address address")
 	div(class="personal-data__block address__form")
 		span(class="personal-data__change personal-data__change--change" id="change-address")  изменить
 		h3.address__title Текущий адрес доставки
-
-		each item in getData('address')
-			div(class="address__block" id="address-block-"+item.index)
-				input(type="radio" name="address" class="address__input" placeholder="" checked=(item.index==1?'checked': false) id="address-input-"+item.index value="address")
-				label(class="address__label" for="address-input"+item.index id="address-label-"+item.index)= item.address
-				span(class="address__remove" id="remove-address"+item.index)  удалить
+		div.address__blocks
+			each item in getData('address')
+				div(class="address__block" id="address-block-"+item.index)
+					input(type="radio" name="address" class="address__input" placeholder="" checked=(item.index==1?'checked': false) id="address-input-"+item.index value="address")
+					label(class="address__label" for="address-input"+item.index id="address-label-"+item.index)= item.address
+					span(class="address__remove" id="remove-address"+item.index)  удалить
 		
 		br
 		button(type="submit" class="address__add-btn") Добавить еще один адрес
