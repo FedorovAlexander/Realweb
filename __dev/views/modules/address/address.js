@@ -23,6 +23,7 @@ function addressBlock() {
 		addressLabel.forEach(function(item) {
 			item.style.border = "1px solid #d5d5d5";
 			item.style.backgroundColor = "#ffffff";
+			item.style.paddingLeft = "12px"
 		});
 
 		addressLabel1.style.borderBottom = "none";

@@ -36,7 +36,7 @@
 		padding-right 10px
 		padding-top 7px
 		padding-bottom 7px
-		padding-left 12px
+		margin-bottom -4px
 		border 1px solid transparent
 		display inline-block
 		width 78%
@@ -80,10 +80,16 @@
 		padding-bottom 5px
 		padding-left 18px
 		padding-right 18px
-		margin-top 6px
+		margin-top 8px
 		background-color #cdc9c7
 		border none
 		border-bottom 2px solid #bcb8b6
+		opacity 1
+		transition opacity 0.1s linear
+
+	&__add-btn:hover
+		opacity 0.7
+		transition opacity 0.1s linear
 
 	&__wrapper 
 		display flex
@@ -181,8 +187,9 @@
 			top 0
 			right 0
 
-#address1 
-	border-bottom none
+#change-address
+	top 17px
+
 
 input[type='radio'] 
 	height 17px
