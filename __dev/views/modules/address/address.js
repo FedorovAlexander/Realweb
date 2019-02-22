@@ -5,6 +5,7 @@ function addressBlock() {
 	let addAddressButton = document.querySelector(".address__add-btn");
 	let removeAddressLink = document.querySelectorAll(".address__remove");
 	let addressLabel = document.querySelectorAll(".address__label");
+	let addressLabel1 = document.querySelector(".address__label:first-child");
 	let addressForm = document.querySelector(".address__form");
 	let addressBlocks = document.querySelectorAll(".address__block");
 
@@ -24,6 +25,7 @@ function addressBlock() {
 			item.style.backgroundColor = "#ffffff";
 		});
 
+		addressLabel1.style.borderBottom = "none";
 		addressForm.style.backgroundColor = "#f4f4f4";
 		addressForm.style.paddingBottom = "0px";
 	});
@@ -31,6 +33,12 @@ function addressBlock() {
 	removeAddressLink.forEach(function(item,i) {
 		item.addEventListener('click', function() {
 			addressBlocks[i].style.display = 'none';
+
+			if(addressLabel.length <= 1) {
+				addressLabel1.style.borderBottom = "none";
+			} else {
+				addressLabel1.style.borderBottom = "1px solid #d5d5d5";
+			}
 		})
 	});
 }
