@@ -1,0 +1,40 @@
+.checkbox-label 
+  cursor pointer
+  outline none
+
+.checkbox-input[type="checkbox"]:focus+.checkbox-label::before 
+  outline none
+
+.checkbox-label input 
+  cursor pointer
+
+input[type="checkbox"] 
+  display none
+
+.checkbox 
+  position absolute
+  top -2px
+  left -1px
+  width 15px
+  height 15px
+  border 1px solid lightgrey 
+  background-color #fff
+
+.checkbox-label input:checked~.checkbox
+  outline none
+  background-color #fff
+
+.checkbox:after 
+  position absolute
+  display none
+  content ""
+  width 16px
+  height 16px
+  sprite($s-checkmark)
+  
+
+.checkbox-label input:checked~.checkbox:after 
+  display block
+
+.checkbox-label .checkbox:after 
+  // background #2E3740
