@@ -3,8 +3,7 @@ article.socials
   p.socials__description Привяжите учетную запись социальной сети и используйте ее для входа
   .socials__buttons-block
     each item in getData('socials')
-      button.socials__button
-        a(href="#" class="socials__link socials__link--"+item.abbr)= item.network
+      a(href="#" class="socials__link socials__link--"+item.abbr)= item.network
 
   //- svg(width="40" height="40")
   //-   use(xlink:href="#icon-business")
