@@ -57,6 +57,8 @@
     padding-bottom 1px
     padding-left 55px
     margin-bottom 15px
+    opacity 1
+    transition opacity 0.1s linear
 
     +below(1049px)
       max-width 300px
@@ -64,6 +66,10 @@
       margin-right auto
       text-align center
       padding-left 0
+  
+  &__link:hover
+    opacity 0.7
+    color #fff6e0
       
   &__link--fb
     background-color #1d59a3
